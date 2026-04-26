@@ -1,5 +1,13 @@
-# راهنمای کامل فارسی — Vercel XHTTP Relay
-A minimal Vercel Edge Function that relays XHTTP traffic to your Xray/V2Ray backend. Use Vercel's global edge network as a front for your Xray server. Includes complete Persian setup guide (Persian README).
+# راهنمای کامل فارسی # راهنمای کامل فارسی — Vercel XHTTP Relay
+
+[![Telegram Channel](https://img.shields.io/badge/Telegram-%40avaco__cloud-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/avaco_cloud)
+
+> 📢 **کانال تلگرام Avaco Cloud** — برای آموزش‌های بیشتر، آپدیت‌ها، روش‌های دور زدن سانسور و کانفیگ‌های جدید عضو شو:
+> 
+> 👉 **[https://t.me/avaco_cloud](https://t.me/avaco_cloud)**
+
+A minimal relay running on **Vercel Edge Functions** that forwards **XHTTP** traffic from your Xray/V2Ray client to your backend Xray server. The goal: use Vercel's global edge network and the `*.vercel.app` domain as a front to hide the real IP of your origin server.
+
 ---
 
 ## فهرست
@@ -721,3 +729,23 @@ MIT — مثل پروژه‌ی اصلی.
 ## Disclaimer
 
 این پروژه برای آموزش و تست شخصیه. مسئولیت استفاده با خودته. قوانین کشور و TOS Vercel رو رعایت کن.
+
+---
+
+## 📢 ارتباط با ما
+
+اگه این راهنما برات مفید بود، یا سوال/پیشنهاد داری، از طریق کانال تلگرام در ارتباط باش:
+
+<div align="center">
+
+[![Join Telegram](https://img.shields.io/badge/%D9%87%D9%85%D8%B1%D8%A7%D9%87%20%D9%85%D8%A7%20%D8%B4%D9%88-Avaco%20Cloud-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/avaco_cloud)
+
+**[https://t.me/avaco_cloud](https://t.me/avaco_cloud)**
+
+*آموزش‌های بیشتر • کانفیگ‌های آپدیت • روش‌های دور زدن سانسور • پشتیبانی*
+
+</div>
+
+---
+
+⭐ اگه پروژه به دردت خورد، یه **Star** بذار تا بیشتر دیده بشه.

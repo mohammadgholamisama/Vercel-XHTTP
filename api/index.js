@@ -49,12 +49,11 @@ export default async function handler(req) {
     const hasBody = method !== "GET" && method !== "HEAD";
 
     return await fetch(targetUrl, {
-      method,
-      headers: out,
-      body: hasBody ? req.body : undefined,
-      duplex: "half",
-      redirect: "manual",
-    });
+  method,
+  headers: out,
+  body: hasBody ? req.body : undefined,
+  redirect: "manual",
+});
   } catch (err) {
     console.error("relay error:", err);
     return new Response("Bad Gateway: Tunnel Failed", { status: 502 });

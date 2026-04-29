@@ -48,7 +48,7 @@ export default async function handler(req) {
     const method = req.method;
     const hasBody = method !== "GET" && method !== "HEAD";
 
-    return await fetch(targetUrl, {
+    return fetch(targetUrl, {
   method,
   headers: out,
   body: hasBody ? req.body : undefined,

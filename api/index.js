@@ -1,3 +1,4 @@
+export const config = { runtime: "edge" };
 
 const TARGET_BASE = (process.env.TARGET_DOMAIN || "").replace(/\/$/, "");
 
@@ -47,12 +48,13 @@ export default async function handler(req) {
     const method = req.method;
     const hasBody = method !== "GET" && method !== "HEAD";
 
-    return fetch(targetUrl, {
-  method,
-  headers: out,
-  body: hasBody ? req.body : undefined,
-  redirect: "manual",
-});
+    return await fetch(targetUrl, {
+      method,
+      headers: out,
+      body: hasBody ? req.body : undefined,
+      duplex: "half",
+      redirect: "manual",
+    });
   } catch (err) {
     console.error("relay error:", err);
     return new Response("Bad Gateway: Tunnel Failed", { status: 502 });
